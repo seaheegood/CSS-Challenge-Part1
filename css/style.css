@@ -1,0 +1,31 @@
+/* Element Selector */
+body {
+    /* Set all text color to #333 */
+    color: #333;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Combinators */
+main > section > img {
+    width: 25%;
+}
+
+/* ID Selector */
+#paragraph {
+    /* remaining default color 
+    ID Selector is more specific*/
+    color: black;
+}
+
+/* Class Selector */
+.wrapper {
+    background-color: #007007;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Pseudo Element Selector */
+/* odd bullet point bold */
+li:nth-of-type(odd) {
+    font-weight: bold;
+}
