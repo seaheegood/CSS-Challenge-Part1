@@ -2,12 +2,13 @@
 body {
     /* Set all text color to #333 */
     color: #333;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif; /* put background image */
+    background-image: url(../images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);
 }
 
 /* Combinators */
 main > section > img {
-    width: 25%;
+    width: 50%;
 }
 
 /* ID Selector */
@@ -19,13 +20,26 @@ main > section > img {
 
 /* Class Selector */
 .wrapper {
-    background-color: #007007;
-    width: 90%;
+    /* set width 80% */
+    width: 80%;
     margin: 0 auto;
+    background-color: #dad7cd;
+    border: 2px solid #333;
 }
 
 /* Pseudo Element Selector */
 /* odd bullet point bold */
 li:nth-of-type(odd) {
     font-weight: bold;
+}
+
+section img:hover {
+    filter: sepia(50%) drop-shadow(15px 15px 20px black);
+}
+
+header {
+    width: 90%;
+    background-color: #a3b18a;
+    margin: 0 auto;
+    text-align: center;
 }
