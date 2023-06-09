@@ -8,6 +8,8 @@ body {
 
 /* Combinators */
 main > section > img {
+    /* make responsive image */
+    max-width: 800px;
     width: 50%;
 }
 
@@ -25,6 +27,7 @@ main > section > img {
     margin: 0 auto;
     background-color: #dad7cd;
     border: 2px solid #333;
+    text-align: center;
 }
 
 /* Pseudo Element Selector */
@@ -37,9 +40,17 @@ section img:hover {
     filter: sepia(50%) drop-shadow(15px 15px 20px black);
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 header {
+    /* width 90% */
     width: 90%;
+    /* set background color */
     background-color: #a3b18a;
+    /* place it center */
     margin: 0 auto;
     text-align: center;
 }
